@@ -65,7 +65,7 @@ resource "aws_security_group" "my_security_group" {
 }
 
 resource "aws_instance" "vikas_ec2_instance" {
-  ami                          = "ami-0cd3c7f72edd5b06d"
+  ami                          = "ami-0005e0cfe09cc9050"
   instance_type                = "t2.micro"
   key_name                     = "splunk"
   vpc_security_group_ids       = [aws_security_group.my_security_group.id]
